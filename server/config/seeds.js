@@ -18,15 +18,6 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'Tin of Cookies',
-      description:
-        'Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.',
-      image: 'cookie-tin.jpg',
-      category: categories[0]._id,
-      price: 2.99,
-      quantity: 500
-    },
-    {
       name: 'Canned Coffee',
       description:
         'Praesent sed lacinia mauris. Nulla congue nibh magna, at feugiat nunc scelerisque quis. Donec iaculis rutrum vulputate. Suspendisse lectus sem, vulputate ac lectus sed, placerat consequat dui.',
@@ -58,26 +49,17 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare diam quis eleifend rutrum. Aliquam nulla est, volutpat non enim nec, pharetra gravida augue. Donec vitae dictum neque. Pellentesque arcu lorem, fringilla non ligula ac, tristique bibendum erat. Ut a semper nibh. Quisque a mi et mi tempor ultricies. Maecenas eu ipsum eu enim hendrerit accumsan at euismod urna.',
-      image: 'bedtime-book.jpg',
+      image: 'bed-time story.jpg',
       price: 9.99,
       quantity: 100
     },
     {
-      name: 'Spinning Top',
+      name: 'Avengers',
       category: categories[4]._id,
       description: 'Ut vulputate hendrerit nibh, a placerat elit cursus interdum.',
-      image: 'spinning-top.jpg',
+      image: 'avengers.jpg',
       price: 1.99,
       quantity: 1000
-    },
-    {
-      name: 'Teddy Bear',
-      category: categories[4]._id,
-      description:
-        'Vestibulum et erat finibus erat suscipit vulputate sed vitae dui. Ut laoreet tellus sit amet justo bibendum ultrices. Donec vitae felis vestibulum, congue augue eu, finibus turpis.',
-      image: 'teddy-bear.jpg',
-      price: 7.99,
-      quantity: 100
     },
   ]);
 
