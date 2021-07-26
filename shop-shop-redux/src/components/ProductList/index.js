@@ -83,6 +83,3 @@ function ProductList() {
         </div>
     );
 }
-
-export default ProductList;
-© 2021 GitHub, Inc.
